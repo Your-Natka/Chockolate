@@ -89,9 +89,6 @@ button {
 
   margin-left: auto;
   margin-right: auto;
-
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 /* Tablet screens */
 @media screen and (min-width: 768px) {
@@ -286,6 +283,9 @@ button {
   font-style: italic;
 }
 .logo-icon {
+  fill: none;
+  stroke: var(--accent-cl);
+  animation: rotate 3s linear 4s infinite both;
 }
 
 /* Navigation */
