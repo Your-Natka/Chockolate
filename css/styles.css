@@ -283,6 +283,9 @@ button {
   font-style: italic;
 }
 .logo-icon {
+  fill: none;
+  stroke: var(--accent-color);
+  animation: rotate 3s linear 4s infinite both;
 }
 
 /* Navigation */
