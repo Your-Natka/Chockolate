@@ -512,6 +512,16 @@ button {
   .benefits-list-item {
     flex-basis: calc((100% - 88px * 2) / 3);
   }
+  .benefits-list-item:not(:last-child):after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+    right: -18px;
+    width: 1px;
+    height: 124px;
+    background-color: #ffffff80;
+  }
 }
 .benefits-list-wrapper {
   display: flex;
