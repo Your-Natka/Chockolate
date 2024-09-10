@@ -323,7 +323,7 @@ button {
 }
 .nav-list-link::after {
   content: '';
-  position: absolute;
+  position: relative;
   left: 0;
   bottom: 20px;
 
@@ -336,7 +336,10 @@ button {
 .nav-list-link.current::after {
   background-color: var(--accent-cl);
 }
-
+.link.current::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
 /**
     |============================
     | Hero styles
