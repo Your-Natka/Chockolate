@@ -512,7 +512,7 @@ button {
   .benefits-list-item {
     flex-basis: calc((100% - 88px * 2) / 3);
   }
-  .benefits-list-item:not(:last-child):after {
+  .benefits-list:not(:last-child):after:not(:last-child):after {
     content: '';
     display: inline-block;
     position: absolute;
@@ -520,7 +520,7 @@ button {
     right: -18px;
     width: 1px;
     height: 124px;
-    background-color: var(body-bg-cl);
+    background-color: rgba(255, 255, 255, 0.5);
   }
 }
 .benefits-list-wrapper {
