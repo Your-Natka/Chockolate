@@ -284,7 +284,7 @@ button {
 }
 .logo-icon {
   fill: none;
-  stroke: var(--accent-color);
+  stroke: var(--accent-cl);
   animation: rotate 3s linear 4s infinite both;
 }
 
