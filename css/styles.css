@@ -268,6 +268,7 @@ button {
   line-height: 1.11;
   letter-spacing: -0.03em;
 }
+
 @media only screen and (min-width: 768px) {
   .logo {
     margin-right: 47px;
@@ -510,14 +511,15 @@ button {
 }
 @media only screen and (min-width: 1200px) {
   .benefits-list-item {
+    position: relative;
     flex-basis: calc((100% - 88px * 2) / 3);
   }
-  .benefits-list:not(:last-child):after:not(:last-child):after {
+  .benefits-list-item:not(:last-child):after {
     content: '';
     display: inline-block;
     position: absolute;
     top: 60px;
-    right: -18px;
+    right: -40px;
     width: 1px;
     height: 124px;
     background-color: rgba(255, 255, 255, 0.5);
