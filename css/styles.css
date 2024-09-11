@@ -284,11 +284,19 @@ button {
   font-style: italic;
 }
 .logo-icon {
-  fill: none;
-  stroke: var(--accent-cl);
-  animation: rotate 3s linear 4s infinite both;
+  animation-name: chocoIcon;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
-
+@keyframes chocoIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* Navigation */
 .nav {
   display: flex;
@@ -332,13 +340,19 @@ button {
   height: 4px;
   border-radius: 4px;
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-list-link.current::after {
   background-color: var(--accent-cl);
 }
 .nav-list-link.current {
   position: relative;
+}
+.nav-list-link:hover:after,
+.nav-list-link:focus:after,
+.nav-list-link.current::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 .nav-list-link:hover,
 .nav-list-link:focus {
