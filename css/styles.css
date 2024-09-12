@@ -695,7 +695,6 @@ button {
   background-color: var(--accent-cl);
   border: 1px solid transparent;
 }
-
 .overlay-label.active {
   color: var(--primary-cl);
   border-color: var(--accent-cl);
@@ -705,7 +704,7 @@ button {
   height: 146px;
   text-align: left;
   margin: 0;
-  font-size: 14px;
+  font-size: 11px;
   line-height: 1.28;
   letter-spacing: -0.02em;
   overflow: hidden;
