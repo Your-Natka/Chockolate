@@ -905,7 +905,7 @@ button {
   transition-delay: 0s, 500ms;
 }
 .overlay-text {
-  color: #fafafa;
+  color: var(--accent-cl);
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -1123,7 +1123,7 @@ button {
   transition: border-color var(--animation);
 }
 .footer-form-input:focus {
-  border-color: #fd9222;
+  border-color: var(--accent-cl);
 }
 .footer-form-input::placeholder {
   color: rgba(255, 255, 255, 0.3);
@@ -1148,10 +1148,8 @@ button {
   position: fixed;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
-
   background-color: rgba(17, 17, 17, 0.5);
 
   transition: opacity 300ms ease-out, visibility 300ms ease-out;
@@ -1173,9 +1171,10 @@ button {
   padding: 40px;
 
   border-radius: 15px;
-  background-color: #fafafa;
+  background-color: var(--accent-cl);
 
   transition: transform 150ms ease-in 300ms, opacity 150ms ease-in 300ms;
+  
 }
 .backdrop.is-hidden .modal {
   transform: translateX(-50%) translateY(-70%);
