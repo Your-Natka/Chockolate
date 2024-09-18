@@ -236,7 +236,7 @@ button {
 }
 .header-socials-item {
 }
-.header-socials-link {
+.socials-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -252,12 +252,12 @@ button {
   transition: color 300ms ease, border-color 300ms ease;
 }
 
-.header-socials-link:hover,
-.header-socials-link:focus {
+.socials-link:hover,
+.socials-link:focus {
   color: var(--accent-cl);
   border-color: var(--beige-bg-cl);
 }
-.header-socials-icon {
+.socials-icon {
   fill: currentColor;
 }
 /* Logo */
@@ -998,13 +998,12 @@ button {
   justify-content: center;
   background-color: var(--bg-body);
   border-radius: 100px;
-  border: 1px solid var(--accent-color);
-  border-color: var(--accent-cl);
+  border: 1px solid var(--accent-cl);
 
   font-weight: 600;
   font-size: 18px;
   line-height: 1.22;
-  color: var(--text-main-color);
+  color: var(--primary-cl);
 
   transition: background-color 300ms ease-in-out,
       color 300ms ease-in-out;
@@ -1012,7 +1011,7 @@ button {
 
 .reviews-btn:hover,
 .reviews-btn:focus {
-  color: var(--text-light-color);
+  color: var(--light-cl);
   background-color: var(--accent-cl);
 }
 
@@ -1227,7 +1226,7 @@ button {
   font-size: 24px;
   font-weight: 600;
   line-height: 1.17;
-  text-align: center;
+  text-align: left;
   letter-spacing: -0.03em;
   text-transform: uppercase;
 }
@@ -1387,6 +1386,8 @@ input[type='checkbox']:checked + .agreement-checkbox {
   color: var(--accent-cl);
 }
 .modal-form-btn {
+  display: flex;
+  justify-content: center;
   margin-top: 40px;
 }
 
