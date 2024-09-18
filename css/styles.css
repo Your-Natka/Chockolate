@@ -992,7 +992,31 @@ button {
 .reviews-btn {
   display: block;
   margin: 0 auto;
+  min-width: 222px;
+  min-height: 50px;
+  padding: 13px 39px;
+  justify-content: center;
+  background-color: var(--bg-body);
+  border-radius: 100px;
+  border: 1px solid var(--accent-color);
+
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--text-main-color);
+
+  transition: background-color 300ms ease-in-out,
+      color 300ms ease-in-out;
 }
+
+.reviews-btn:hover,
+.reviews-btn:focus {
+  color: var(--text-light-color);
+  background-color: var(--accent-cl);
+}
+
+
 
 /**
   |============================
@@ -1171,7 +1195,7 @@ button {
   padding: 40px;
 
   border-radius: 15px;
-  background-color: var(--accent-cl);
+  background-color: var(--body-bg-cl);
 
   transition: transform 150ms ease-in 300ms, opacity 150ms ease-in 300ms;
   
