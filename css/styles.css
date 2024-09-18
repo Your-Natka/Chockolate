@@ -991,7 +991,7 @@ button {
 }
 .reviews-btn {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto;  
   min-width: 222px;
   min-height: 50px;
   padding: 13px 39px;
@@ -999,7 +999,7 @@ button {
   background-color: var(--bg-body);
   border-radius: 100px;
   border: 1px solid var(--accent-color);
-
+  border-color: var(--accent-cl);
 
   font-weight: 600;
   font-size: 18px;
