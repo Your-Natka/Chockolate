@@ -772,7 +772,11 @@ button {
   background-color: #4c4c4c;
   border: 1px solid #eceded;
 }
-
+@media only screen and (min-width: 768px) {
+  .made-container {
+    display: inline-flex;
+  }
+}
 /**
   |============================
   | Products styles
@@ -1208,10 +1212,6 @@ button {
   top: 24px;
   right: 24px;
 
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-
   padding: 0;
   background-color: transparent;
   border: none;
@@ -1469,10 +1469,10 @@ input[type='checkbox']:checked + .agreement-checkbox {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 999;
 
-  height: 100%;
-  width: 220px;
+  width: 100vw;
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
