@@ -729,20 +729,26 @@ button {
 .made-title {
 }
 .made-left-side {
+  margin-bottom: 20px;
   border-radius: 15px;
   overflow: hidden;
   flex-shrink: 0;
 }
 .made-pic {
+  width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border-color: transparent;
+    border: none;
 }
 .made-right-side {
   padding: 32px;
+  max-width: 614px;
   border-radius: 15px;
   background: var(--light-cl);
 }
 .made-subtitle {
   margin-bottom: 32px;
-
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
@@ -774,8 +780,17 @@ button {
 }
 @media only screen and (min-width: 768px) {
   .made-container {
-    display: inline-flex;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: block;
+    margin: 0;
   }
+  .made-left-side {
+    max-width: 614px;
+    height: 400px;
+    
+  }
+  
 }
 /**
   |============================
@@ -1456,7 +1471,6 @@ input[type='checkbox']:checked + .agreement-checkbox {
   background-color: rgba(0, 0, 0, 0.1);
 }
 .container.header-mobile-wrapper {
-  padding-left: 0;
   padding-right: 0;
   width: 100%;
 }
@@ -1471,8 +1485,8 @@ input[type='checkbox']:checked + .agreement-checkbox {
   left: 0;
   z-index: 999;
 
-  width: 100vw;
-  height: 100vh;
+  width: 220px;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
